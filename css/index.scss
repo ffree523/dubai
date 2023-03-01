@@ -1,0 +1,134 @@
+body {
+  background: #272727;
+  margin: 0.0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigation {
+  padding: 2.1% 3.2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .header__navigation-logo:hover svg path {
+    stroke: #FCD54C;
+  }
+  nav ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    transition: .33s linear;
+  }
+  .header__navigation-logo {
+  }
+  .header__navigation-menu > li {
+    float: left;
+    position: relative;
+  }
+  .header__navigation-menu > li:first-child {border-left: 0;}
+  .header__navigation-menu > li > a {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    color: #FEFDFD;
+    letter-spacing: 2px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .header__navigation-menu:hover svg path {
+    fill: #FCD54C;
+  }
+  .header__navigation-submenu a:hover {
+    color: black;
+    background-color: #FCD54C;
+  }
+  .header__navigation-submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 200px;
+    background: #272727;
+    border: 1px solid #979797;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+  }
+  .header__navigation-submenu li {position: relative;}
+  .header__navigation-submenu li a {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    width: 200px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  nav li:hover > .header__navigation-submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  #header__navigation-contact {
+  }
+  nav a:hover {
+    border-bottom: 1px solid #FCD54C;
+    color: #FCD54C;
+  }
+  .header__navigation-bookaconsulatation:hover svg {
+    border: 1px solid #FCD54C;
+  }
+  .header__navigation-bookaconsulatation:hover svg rect {
+    fill: black;
+  }
+  .header__navigation-bookaconsulatation:hover svg path {
+    fill: #FCD54C;
+  }
+  .header__navigation-lang {
+    display: flex;
+    .header__navigation-en {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #FCD54C;
+      padding-right: 8px;
+    }
+
+    .header__navigation-ru {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #929292;
+    }
+  }
+  .header__navigation-ru:hover {
+    color: #FCD54C;
+  }
+  .header__navigation-tel p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .header__navigation-tel p:hover {
+    color: #FCD54C;
+  }
+}
